@@ -1,0 +1,313 @@
+:root {
+  /* 主色 */
+  --vp-c-primary: #0062FF;
+  --vp-c-primary-light: #3381FF;
+  --vp-c-primary-dark: #004ECC;
+  --vp-c-primary-soft: rgba(0, 98, 255, 0.10);
+
+  /* 功能色 */
+  --vp-c-success: #00BF7F;
+  --vp-c-warning: #FF5340;
+  --vp-c-danger: #FF5340;
+
+  /* 文字色 */
+  --vp-c-text-1: rgba(0, 0, 0, 0.85);
+  --vp-c-text-2: rgba(0, 0, 0, 0.65);
+  --vp-c-text-3: rgba(0, 0, 0, 0.45);
+
+  /* 背景色 */
+  --vp-c-bg: #F4F7FA;
+  --vp-c-bg-soft: #FFFFFF;
+  --vp-c-bg-light: #F8FAFD;
+
+  /* 圆角 */
+  --vp-button-brand-border-radius: 2px;
+  --vp-button-alt-border-radius: 2px;
+  --vp-code-block-bg: #F5F7FA;
+
+  /* 字体 */
+  --vp-font-family-base: 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --vp-font-family-mono: 'DIN Alternate Bold', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
+}
+
+/* 卡片样式 */
+.vp-doc div[class*='container'] {
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 12px 32px 4px rgba(0,0,0,0.04), 0px 8px 20px rgba(0,0,0,0.08);
+}
+
+/* 按钮样式 */
+.VPButton.medium {
+  border-radius: 2px;
+  height: 32px;
+  padding: 6px 16px;
+}
+
+/* 侧边栏样式 */
+.VPSidebar {
+  background: #FFFFFF;
+}
+
+/* 导航栏样式 */
+.VPNavBar {
+  background: #FFFFFF;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* 内容区域背景 */
+.VPContent {
+  background: #F4F7FA;
+}
+
+/* 首页卡片样式 */
+.home-module-card {
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 24px;
+  box-shadow: 0px 12px 32px 4px rgba(0,0,0,0.04), 0px 8px 20px rgba(0,0,0,0.08);
+  transition: all 200ms ease-in-out;
+}
+
+.home-module-card:hover {
+  box-shadow: 0px 16px 40px 8px rgba(0,0,0,0.08), 0px 12px 24px rgba(0,0,0,0.12);
+}
+
+/* 状态标签 */
+.status-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.status-success {
+  background: rgba(0, 191, 127, 0.10);
+  color: #00BF7F;
+}
+
+.status-warning {
+  background: rgba(255, 83, 64, 0.10);
+  color: #FF5340;
+}
+
+.status-danger {
+  background: rgba(255, 83, 64, 0.10);
+  color: #FF5340;
+}
+
+.status-primary {
+  background: rgba(0, 98, 255, 0.10);
+  color: #0062FF;
+}
+
+/* 首页 Hero 区域优化 */
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #0062FF 30%, #3381FF);
+}
+
+/* Hero 标题区域样式 */
+.vp-doc .hero {
+  padding: 60px 24px 40px;
+}
+
+.vp-doc .hero h1 {
+  font-size: 56px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+  background: linear-gradient(120deg, #0062FF, #3381FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 32px !important;
+}
+
+/* 首页按钮区域优化 */
+.vp-doc .hero .actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.vp-doc .hero .actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  text-decoration: none;
+  min-width: 160px;
+  line-height: 1.5;
+  height: auto;
+}
+
+/* 主按钮样式 */
+.vp-doc .hero .actions a.brand {
+  background: linear-gradient(135deg, #0062FF 0%, #0052DD 100%);
+  color: #FFFFFF !important;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 98, 255, 0.25);
+}
+
+.vp-doc .hero .actions a.brand:hover {
+  background: linear-gradient(135deg, #3381FF 0%, #0062FF 100%);
+  box-shadow: 0 6px 24px rgba(0, 98, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+/* 次按钮样式 */
+.vp-doc .hero .actions a.alt {
+  background: #FFFFFF;
+  color: rgba(0, 0, 0, 0.85) !important;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.vp-doc .hero .actions a.alt:hover {
+  background: #F8FAFD;
+  border-color: #0062FF;
+  color: #0062FF !important;
+  box-shadow: 0 4px 16px rgba(0, 98, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* 首页 Features 区域 - 功能卡片 */
+.vp-doc .features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 32px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.vp-doc .features .item {
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 28px 24px;
+  box-shadow: 0px 12px 32px 4px rgba(0,0,0,0.04), 0px 8px 20px rgba(0,0,0,0.08);
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* 左侧彩色边框指示器 */
+.vp-doc .features .item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #0062FF 0%, #3381FF 100%);
+  border-radius: 4px 0 0 4px;
+}
+
+.vp-doc .features .item:hover {
+  box-shadow: 0px 16px 40px 8px rgba(0,0,0,0.08), 0px 12px 24px rgba(0,0,0,0.12);
+  transform: translateY(-4px);
+  border-color: rgba(0, 98, 255, 0.2);
+}
+
+/* 卡片图标区域 */
+.vp-doc .features .item .icon-wrapper {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, rgba(0, 98, 255, 0.08) 0%, rgba(0, 98, 255, 0.03) 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.vp-doc .features .item .icon-wrapper svg {
+  width: 24px;
+  height: 24px;
+  color: #0062FF;
+}
+
+.vp-doc .features .item .title {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85) !important;
+  margin-bottom: 10px !important;
+  padding-left: 0 !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vp-doc .features .item .title svg {
+  width: 22px;
+  height: 22px;
+  color: #0062FF;
+  flex-shrink: 0;
+}
+
+.vp-doc .features .item .details {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6) !important;
+  line-height: 1.65;
+  margin: 0 !important;
+}
+
+/* 箭头指示器 */
+.vp-doc .features .item .arrow {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  color: #0062FF;
+}
+
+.vp-doc .features .item:hover .arrow {
+  opacity: 1;
+  right: 16px;
+}
+
+/* 首页 Hero 区域 */
+.vp-doc .hero {
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.vp-doc .hero .description {
+  font-size: 20px !important;
+  color: rgba(0, 0, 0, 0.65) !important;
+  max-width: 600px;
+  margin: 0 auto 32px !important;
+}
+
+.vp-doc .hero .actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .vp-doc .features {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .vp-doc .hero h1 {
+    font-size: 32px !important;
+  }
+
+  .vp-doc .hero .description {
+    font-size: 16px !important;
+  }
+}

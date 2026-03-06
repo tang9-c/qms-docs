@@ -1,0 +1,30 @@
+{
+  "name": "qms-help-docs",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "QMS 帮助文档网站",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs --port 5175",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "vitepress",
+    "documentation",
+    "qms",
+    "fmea"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@iconify-json/ph": "^1.2.1",
+    "@unocss/preset-icons": "^0.65.3",
+    "@unocss/reset": "^66.6.5",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "unocss": "^0.65.3",
+    "vitepress": "^1.5.0",
+    "vue": "^3.5.13",
+    "vue-i18n": "^9.14.2"
+  }
+}
