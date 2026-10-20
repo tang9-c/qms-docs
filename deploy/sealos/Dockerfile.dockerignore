@@ -1,0 +1,6 @@
+.git
+node_modules
+docs/.vitepress/cache
+docs/.vitepress/dist
+*.log
+.DS_Store
